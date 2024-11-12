@@ -3,30 +3,30 @@
 - Name: Egon Dehandschutter
 - E-mailadres: <mailto:egon.dehandschutter@gmail.com>
 
-## Vereisten
+## requirements
 
-Ik verwacht dat volgende software reeds geïnstalleerd is:
+I expect that the following software is already installed:
 
 - [NodeJS](https://nodejs.org)
 - [Yarn](https://yarnpkg.com)
 
-## Opstarten
+## Startup
 
-Voor dat de front-end kan werken, moet ook de webservice draaien. Meer informatie kan gevonden worden in de README van de webservice op github: https://github.com/egondehandschutter/back-end-test.git.
+Before the front-end is started, the back-end must be started. More information can be found in the README of the back-end on github: https://github.com/egondehandschutter/back-end-test.git.
 
-- Maak een `.env` met de volgende informatie en pas het toe aan uw configuratie:
+- make a `.env` with the following information and add it to your configuration:
 
 ```dotenv
 VITE_API_URL=http://localhost:9000/api
 ```
 
-- Installeer alle dependencies:
+- Install all dependencies:
 
 ```bash
 yarn install
 ```
 
-- Applicatie starten, het draait automatisch op poort <http://localhost:5137>:
+- Start application, it automatically runs on port <http://localhost:5137>:
 
 ```bash
 yarn dev
